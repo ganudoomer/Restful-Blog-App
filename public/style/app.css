@@ -1,0 +1,21 @@
+#iconwe{
+    font-size: 2em;
+}
+form {
+    display: inline;
+    
+}
+body{
+
+    background-image: url(https://images.unsplash.com/photo-1571056578894-51e67d466d44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80);
+    
+    background-size: auto;
+    
+    object-fit: cover;
+
+}
+h1{
+    color:whitesmoke;
+    font-weight: 900;
+    text-align: center;
+}

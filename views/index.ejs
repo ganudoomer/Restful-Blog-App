@@ -1,0 +1,35 @@
+
+<%- include("partials/header") %>
+
+      <div class="ui main text container huge header">
+          <h1>RESTFULL BLOG APP </h1>
+      </div>
+<%blogs.forEach(function(blog){ %>   
+<div class="ui main text items black segment container">
+        <div class="item">
+          <div id="indeximage" class="image small">
+                <img src="<%=blog.image%>" height="100px" width="100px">
+          </div>
+          <div class="content">
+            <a href="/blog/<%=blog._id%>" class="header"><%=blog.title%></a>
+            <div class="meta">
+                <span><%=blog.created.toDateString()%></span>
+              </div>
+            <div class="description">
+                 <p><%-blog.body.substring(0,100)%></p> 
+                
+                <div class="extra">
+                        <a href="/blog/<%=blog._id%>"><button class="ui right labeled icon button">
+                                <i class="ui right arrow  primary basic  icon"></i>
+                                Read More..
+                              </button></a>  
+                    </div> 
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <%})%> -->
+
+      <%- include("partials/footer") %>
